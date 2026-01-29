@@ -1,6 +1,17 @@
 import re
 
 # Define placeholders for dataset paths
+LR_DEBUG = {
+    "annotation_path": "../../data_mp3d_hdt/objectnav_mp3d_70k/sample_debug/LR_debug.jsonl",
+    "data_path": "../../data_mp3d_hdt/objectnav_mp3d_70k/",  # Can be empty if paths are in annotations
+}
+
+
+SAMPLE_DEBUG = {
+    "annotation_path": "../../data_mp3d_hdt/objectnav_mp3d_70k/sample_debug/BEVftFOV_RGB_Seg__FRONTIER_PIXEL_NUMBER_ONLY_STRATEGY0.jsonl",
+    "data_path": "../../data_mp3d_hdt/objectnav_mp3d_70k/",  # Can be empty if paths are in annotations
+}
+
 CAMBRIAN_737K = {
     "annotation_path": "PATH_TO_CAMBRIAN_737K_ANNOTATION",
     "data_path": "",
@@ -27,6 +38,8 @@ VIDEOCHATGPT = {
 }
 
 data_dict = {
+    "sample_debug": SAMPLE_DEBUG,
+    "lr_debug": LR_DEBUG,
     "cambrian_737k": CAMBRIAN_737K,
     "cambrian_737k_pack": CAMBRIAN_737K_PACK,
     "mp_doc": MP_DOC,
